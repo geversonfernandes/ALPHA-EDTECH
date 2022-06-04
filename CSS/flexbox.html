@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        #container-flexbox{
+            border: 2px solid gold;
+            gap: 4px;
+            display: flex;
+        }
+
+        .flexbox{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        img{
+            width: 100px;
+            height: 80px;
+            justify-content: center;
+        }
+
+        .div-1{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .squad{
+            width: 30px;
+            height: 30px;
+            background-color: lightblue;
+            
+        }
+
+        .div-2{
+            align-items: center;
+            justify-content:space-between;
+        }
+
+        .div-3{
+            flex-direction: column;
+            align-items: center;
+            justify-content:space-between;
+        }
+
+        .div-4{
+            justify-content:space-between;
+        }
+        .div-3{
+            justify-content:space-between;
+        }
+    </style>
+</head>
+<body>
+    <div id="container-flexbox">
+        <div class="flexbox div-1"><img src="images/photo-profile.jpeg" alt="foto de perfil de geverson araujo"></div>
+        <div class="flexbox div-2">
+            <div class="squad">1</div>
+            <div class="squad">2</div>
+            <div class="squad">3</div>
+        </div>
+        <div class="flexbox div-3">
+            <div class="squad">1</div>
+            <div class="squad">2</div>
+            <div class="squad">3</div>
+        </div>
+        <div class="flexbox div-4">
+            <div class="squad">1</div>
+            <div class="squad">2</div>
+            <div class="squad">3</div>
+        </div>
+        <div class="flexbox div-5">
+            <div class="squad">1</div>
+            <div class="squad" style="order: 3;">2</div>
+            <div class="squad">3</div>
+        </div>
+    </div>
+</body>
+</html5>

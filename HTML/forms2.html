@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Exercício 05 - Módulo 03</h1><br>
+    <h2>Input com type text</h2>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="primeiro-nome">Nome</label><br>
+            <input type="text" id="primeiro-nome"><br>
+            <label for="sobrenome">Sobrenome</label><br>
+            <input type="text" id="sobrenome">
+        </fieldset>
+    </form>
+
+    <h2>Input com type password</h2>
+    <form>
+        <fieldset>
+            <legend>Login e Senha</legend>
+            <label for="login">Login</label><br>
+            <input type="text" id="login"><br>
+            <label for="senha">Senha</label><br>
+            <input type="password" id="senha">
+        </fieldset>
+    </form>
+
+    <h2>Input com type date</h2>
+    <form>
+        <label for="aniversario">Sua data de nascimento</label>
+        <input type="date" id="aniversario">
+    </form>
+
+    <h2>Input com type radio</h2>
+    <p>Escolha uma cor</p>
+    <form>
+        <input type="radio" id="cor-preta" name="cor-favorita">
+        <label for="cor-preta">Preta</label>
+        <input type="radio" id="cor-branca" name="cor-favorita">
+        <label for="cor-branca">Branca</label>
+    </form>
+
+    <h2>Input com type checkbox</h2>
+    <p>Qual sua linguagem preferida ?</p>
+    <form>
+        <input type="checkbox" id="java">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="js">
+        <label for="js">Javascript</label><br>
+        <input type="checkbox" id="python">
+        <label for="python">Python</label>
+    </form>
+
+    <h2>Input com type range</h2>
+    <p>Qual a temperatura na sua cidade agora ?</p>
+    <form>
+    <label for="temperatura">Escolha de 0 a 40 graus</label>
+    <input type="range" id="temperatura">
+    </form>
+
+    <h2>Input com type submit e reset</h2>
+    <form>
+        <label for="primeiro-nome">Nome</label><br>
+        <input type="text" id="primeiro-nome"><br>
+        <label for="sobrenome">Sobrenome</label><br>
+        <input type="text" id="sobrenome"><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

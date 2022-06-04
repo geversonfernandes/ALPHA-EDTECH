@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo_fonte - part02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'alexbrush';
+            src: url(fonts/alexbrush-regular-webfont.woff2);
+        }
+        .fonte-woff2{
+            font-family: alexbrush;
+            font-size: 32px;
+        }
+        body{
+            font-size: 20px;
+        }
+        .link-1:link{
+            color: green;
+        }
+        .link-2:visited{
+            color: red;
+        }
+        .link-3:focus{
+            color: gold;
+        }
+        .link-4:hover{
+            color: orange;
+        }
+        .link-5:active{
+            color: violet;
+        }
+        .fonte-google{
+            font-family: 'Macondo', cursive;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Criando uma lista não ordenada</h3>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <hr>
+    <h3>Estilizando links</h3>
+    <h4>link</h4>
+    <a href="#" class="link-1">Este é um link</a>
+    <h4>visited</h4>
+    <a href="#" class="link-2">Este é um link</a>
+    <h4>focus</h4>
+    <a href="#" class="link-3">Este é um link</a>
+    <h4>hover</h4>
+    <a href="#" class="link-4">Este é um link</a>
+    <h4>active</h4>
+    <a href="#" class="link-5">Este é um link</a>
+    <hr>
+    <h3>Utilizando fonte woff2</h3>
+    <p class="fonte-woff2">Demonstração da fonte</p>
+    <hr>
+    <h3>Fonte do google fonts</h3>
+    <p class="fonte-google">Demostração da fonte google fontes</p>
+
+</body>
+</html>

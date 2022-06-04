@@ -1,0 +1,13 @@
+.tag-paragrafo:hover{
+    color: blue;
+}
+
+.tag-paragrafo::first-letter{
+    color: red;
+    font-size: 1.2em;
+
+}
+
+div > p{
+    font-family: 'Courier New', Courier, monospace;
+}

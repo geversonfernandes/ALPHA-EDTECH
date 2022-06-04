@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #example-1,#example-2{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+        #example-1{
+            flex-wrap: wrap;
+        }
+        #example-2{
+            flex-wrap: wrap-reverse;
+        }
+
+        .div-space{
+            width: 80px;
+            height: 80px;
+        }
+        .div-1{
+            background-color: blue;
+        }
+        .div-2{
+            background-color: yellow;
+        }
+        .div-3{
+            background-color: green;
+        }
+        .div-4{
+            background-color: gray;
+        }
+        .div-5{
+            background-color: orange;
+        }
+        .div-6{
+            background-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>wrap</h2>
+    <div id="example-1">
+        <div class="div-1 div-space">1</div>
+        <div class="div-2 div-space">2</div>
+        <div class="div-3 div-space">3</div>
+        <div class="div-4 div-space">4</div>
+        <div class="div-5 div-space">5</div>
+        <div class="div-6 div-space">6</div>
+    </div>
+    <h2>wrap-reverse</h2>
+    <div id="example-2">
+        <div class="div-1 div-space">1</div>
+        <div class="div-2 div-space">2</div>
+        <div class="div-3 div-space">3</div>
+        <div class="div-4 div-space">4</div>
+        <div class="div-5 div-space">5</div>
+        <div class="div-6 div-space">6</div>
+    </div>
+</body>
+</html>

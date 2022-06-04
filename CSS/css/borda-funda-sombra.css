@@ -1,0 +1,53 @@
+.div-cores{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.div-1{
+    background-color: blue;
+}
+
+.div-2{
+    background-color: green;
+    opacity: 0.2;
+}
+
+.div-3{
+    background-color: red;
+    background-image: linear-gradient(yellow,orange);
+    
+}
+
+section{
+    width: 600px;
+    height: 800px;
+    background-image: url("https://avatars.githubusercontent.com/u/31553941?v=4");
+}
+
+.div-bordas{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.div-4{
+    border: 2px dashed blue;
+}
+
+.div-5{
+    border: 3px dotted red;
+}
+
+.div-6{
+    border: 4px double green;
+    border-radius: 25%;
+}
+
+.img-perfil{
+    border-radius: 50%;
+    box-shadow: 10px 10px;
+    width: 200px;
+    height: 200px;
+}
