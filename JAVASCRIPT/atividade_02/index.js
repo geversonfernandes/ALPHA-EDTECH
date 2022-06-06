@@ -1,3 +1,4 @@
+// script da questão 1.
 const btnVerify = document.getElementById("verify");
 
 btnVerify.addEventListener("click", function(e){
@@ -16,6 +17,7 @@ btnVerify.addEventListener("click", function(e){
     }
 });
 
+// script da questão 2.
 const btnCompare = document.getElementById("compare");
 
 btnCompare.addEventListener("click", function(e){
@@ -34,6 +36,7 @@ btnCompare.addEventListener("click", function(e){
     }
 })
 
+// script da questão 3.
 const btnCalculate = document.getElementById("calculate");
 
 btnCalculate.addEventListener("click", function(e){
