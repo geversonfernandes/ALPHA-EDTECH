@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header, footer{
+    background-color: #212529;
+    font-size: 2.8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+header > p,
+footer > p{
+    padding: 1rem;
+}
+
+footer{
+    font-size: 1.8rem;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+section > div{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    padding: 1rem 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
