@@ -57,9 +57,7 @@ function decrement() {
         default:
             break;
     }
-
     seconds--;
-
     //condicional para alerta de tempo
     timeDecremented = (minutes * 60 + (seconds));
     if (timeDecremented < timeInSeconds * 0.05) {
