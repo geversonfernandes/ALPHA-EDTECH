@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>atividade_08</title>
+</head>
+<body>
+    <header>
+        <p>Alpha Edtech</p>
+        <p>Atividade_08</p>
+    </header>
+    <section>
+        <h2>Q01, 02, 03 - </h2>
+        <div>
+            <form>
+                <label for="name">Nome</label>
+                <input id="name" form="name" type="text">
+                <label for="birthdate">Data de Nascimento</label>
+                <input id="birthdate" name="birthdate" type="date">
+                <label for="weight">Peso</label>
+                <input id="weight" name="weight" type="text">
+                <label for="height">Altura(cm)</label>
+                <input id="height" name="height" type="text">
+                <select name="gender" id="gender">
+                    <option value="0" disabled selected>Gênero</option>
+                    <option value="feminino">feminino</option>
+                    <option value="masculino">masculino</option>
+                </select>
+                <button id="send" type="submit">Enviar Dados</button>
+                <p id="message__error"></p>
+                <label id="label__name"></label>
+                <label id="label__birthdate"></label>
+                <label id="label__weight"></label>
+                <label id="label__height"></label>
+                <label id="label__gender"></label>
+                <p id="result__json"></p>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Criado por Geverson A.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
