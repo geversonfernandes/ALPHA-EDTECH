@@ -18,13 +18,15 @@ function subNumbers(a,b){
 
 function multiplyNumbers(a,b){
     if(cont < b){
-        cont = sumNumbers(cont, 1); 
-        result = sumNumbers(result,a);
+        cont = sumNumbers(cont, 1);
+        result = sumNumbers(result,a); 
         multiplyNumbers(a,b);
         return result;
     };
-}
+    return result;
+};
 
+// falta usar a recursividade
 let x = 0;
 function exponential(a, b) {
     if (x === 0) {
@@ -32,13 +34,23 @@ function exponential(a, b) {
         exponential(a, b)
     }
     else if(b > 1) {
-        console.log(x,a,b, typeof(x), typeof(a), typeof(b));
-        x = multiplyNumbers(x, x);
+        x = multiplyNumbers(a, x);
         b--;
-        console.log(x, typeof(x));
         exponential(a, b);
     };
 };
+
+// falta usar a recursividade
+let y = 0;
+function division(a,b){ 
+    if(y > (a-b)){
+        return cont;
+    } else{
+        cont++;
+        y = y + b;
+        division(a,b)
+    }
+}
 
 function calc(){
     const resultCalc = document.getElementById("resultCalc");
@@ -78,6 +90,16 @@ function calc(){
             if(Number.isInteger(input1) && Number.isInteger(input2) && input1 >= 0 && input2 >= 0){
                 exponential(parseInt(input1),parseInt(input2));
                 resultCalc.textContent = `Resultado: ${x} `;
+                cont = 0;
+                result = 0;
+            } else{
+                throw Error(`opa`);
+            }
+            break;
+        case "5":
+            if(Number.isInteger(input1) && Number.isInteger(input2) && input1 >= 0 && input2 >= 0){
+                division(parseInt(input1),parseInt(input2));
+                resultCalc.textContent = `Resultado: ${cont} `;
                 cont = 0;
                 result = 0;
             } else{
