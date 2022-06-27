@@ -53,9 +53,7 @@ const btn2 = document.getElementById("list");
 btn2.addEventListener("click", listProducts);
 function listProducts(){
     document.getElementById("table__products").style.display = "flex";
-
     listTable();
-
     function listTable(){
         let tbody = document.getElementById("tbody");
         tbody.innerHTML = "";
@@ -81,6 +79,8 @@ function listProducts(){
             imgDelete.className = "material-icons";
             imgDelete.innerHTML = "delete";
             tdDelete.appendChild(imgDelete);
+
+            console.log(tdIdName);
 
             imgEdit.setAttribute("onclick", "editFields("+ JSON.stringify(arrProducts[i]) +")");
             imgDelete.setAttribute("onclick", "deleteProduct("+ arrProducts[i].id +")");
@@ -132,7 +132,6 @@ function deleteProduct(id){
     let newProducts = [];
     while(i < arrProducts.length){
         if(arrProducts[i].id == id){
-        arrProducts[i];
         tbody.deleteRow(i);
         }
         if(arrProducts[i].id !== id){
