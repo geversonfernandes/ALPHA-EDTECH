@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    width: 95vw;
+    margin: auto;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    background-color: #333129;
+    min-height: 87vh;
+}
+
+#product__register, #product__data{
+    padding: 2vh 0;
+}
+
+#product__register, #product__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 25vw;
+    height: 80vh;
+    background-color: #FFFFFF;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#product__data{
+    width: 65vw;
+}
+
+
+#logo{
+    width: 5rem;
+}
+
+footer{
+    font-size: 1.8rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    min-height: 5vh;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+table{
+    border: 0.1rem solid #333129;
+    border-collapse: collapse;
+    max-width: 100%;
+    overflow: auto;
+}
+
+tr,td,th{
+    border: 0.1rem solid #333129;
+    padding: 0.4rem 3rem;
+}
+
+tr:hover {
+    background-color: #00B682;
+}
+
+span, #title__product, #title__valor{
+    cursor:pointer;
+}
+
+button{
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: #00B682;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    width: 12rem;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#msg{
+    max-width: 95%;
+    overflow: auto;
+}
+
+td:nth-child(2){
+    cursor: pointer;
+}
+
+#modal{
+    display: none;
+    width: 35rem;
+    height: 35rem;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animate;
+    animation-duration: 800ms;
+    border-radius: 1rem;
+    border: 0.2rem solid #333129;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+
+#icone__delete{
+    float: right;
+    top: 0;
+}
+
+#data__modal{
+    font-size: 2rem;
+}
+
+#filter__products{
+    display: flex;
+    align-items: center;
+}

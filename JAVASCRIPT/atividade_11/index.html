@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>atv_11</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img id="logo" src="imgs/favicon.81c7a1ce.svg" alt="icone alpha edtech">
+            <p>Alpha Edtech</p>
+        </div>
+        <p>Lista de Produtos</p>
+        <p>Atividade_11</p>
+    </header>
+    <section>
+        <div id="product__register">
+            <p id="info__products" ></p>
+            <label for="nameProduct">Nome do Produto</label>
+            <input id="nameProduct" type="text">
+            <label for="description">Descrição</label>
+            <input id="description" type="text">
+            <label for="price">Preço(R$)</label>
+            <input id="price" type="text">
+            <button id="include">Gravar</button>
+            <button id="list">Listar</button>
+            <p id="msg"></p>
+        </div>
+        <div id="product__data">
+            <div id="filter__products">
+                <input id="search__products" type="text" placeholder="Buscar">
+                <span id="search__icon" class="material-icons">search</span>
+            </div>
+            <p id="qtd__products"></p>
+            <table id="table__products">
+                <thead>
+                    <th>Id</th>
+                    <th id="title__product">Produto</th>
+                    <th id="title__valor">Valor</th>
+                    <th>Editar</th>
+                    <th>Apagar</th>
+                </thead>
+                <tbody id="tbody">
+    
+                </tbody>
+            </table>
+        </div>
+        <div id="modal">
+            <div id="close__modal" onclick="closeModal()">
+                <span id="icone__delete" class="material-icons">
+                    clear
+                    </span>
+            </div>
+            <p id="data__modal"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; COPYRIGHT - Todos os direitos reservados a Geverson Araujo</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
