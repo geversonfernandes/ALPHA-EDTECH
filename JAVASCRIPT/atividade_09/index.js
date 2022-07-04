@@ -34,9 +34,12 @@ function exponential(a, b) {
         exponential(a, b)
     }
     else if(b > 1) {
+        result = 0;
+        cont = 0;
         x = multiplyNumbers(a, x);
-        b--;
-        exponential(a, b);
+        console.log(b);
+        result = 0;
+        exponential(a, subNumbers(b,1));
     };
 };
 

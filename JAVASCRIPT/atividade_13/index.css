@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    width: 95vw;
+    margin: auto;
+}
+
+header > div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    background-color: #333129;
+    min-height: 87vh;
+}
+
+#product__register, #product__data{
+    padding: 2vh 0;
+}
+
+#product__register, #product__data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 25vw;
+    height: 80vh;
+    background-color: #FFFFFF;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#product__data{
+    width: 65vw;
+}
+
+
+#logo{
+    width: 5rem;
+}
+
+footer{
+    font-size: 1.8rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    min-height: 5vh;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+section{
+    font-size: 8rem;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.element{
+    display: flex;
+    border: 2px solid #FFFFFF;
+    height: 100px;
+    flex: 1 1 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+.element:hover{
+    cursor: pointer;
+}
+
+[data-mark = "1A"],
+[data-mark = "1B"],
+[data-mark = "1C"]{
+    border-top: none;
+}
+
+[data-mark = "1A"],
+[data-mark = "2A"],
+[data-mark = "3A"]{
+    border-left: none;
+}
+
+[data-mark = "1C"],
+[data-mark = "2C"],
+[data-mark = "3C"]{
+    border-right: none;
+}
+
+[data-mark = "3A"],
+[data-mark = "3B"],
+[data-mark = "3C"]{
+    border-bottom: none;
+}
+
+#result{
+    font-size: 3rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#reset{
+    width: 6rem;
+    height: 3rem;
+    margin-bottom: 3rem;
+}
