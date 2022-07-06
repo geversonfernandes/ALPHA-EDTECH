@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotações</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Consulta de cotações por data</h1>
+        <div id="choose__date">
+            <label for="date">Data da consulta</label>
+            <input type="date" id="input__date">
+        </div>
+        <select name="moedas" id="moedas">
+            <option value="" select>Escolha uma Moeda</option>
+            <option value="USD">Dolar</option>
+            <option value="EUR">Euro</option>
+            <option value="BTC">Bitcoin</option>
+        </select>
+        <button id="check">Checar</button>
+        <table>
+            <thead>
+                <th>Última Cotação</th>
+                <th>Data / Hora</th>
+                <th>Fechamento Mínimo</th>
+                <th>Fechamento Máximo</th>
+                <th>Valor de Fechamento</th>
+            </thead>
+            <tbody id="info">
+                <td id="td1"></td>
+                <td id="td2"></td>
+                <td id="td3"></td>
+                <td id="td4"></td>
+                <td id="td5"></td>
+            </tbody>
+        </table>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
