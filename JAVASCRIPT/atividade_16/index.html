@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Busca CEP</title>
+  </head>
+  <body>
+    <header>
+        <h1>Buscar CEP</h1>
+    </header>
+    <section>
+      <label for="cep">CEP</label>
+      <input id="cep" name="cep" type="text" />
+      <button id="search" disabled>Consultar</button>
+      <table>
+        <thead>
+            <th>Endereço:</th>
+            <th>Bairro:</th>
+            <th>Cidade:</th>
+            <th>Estado:</th>
+            <th>Latitude:</th>
+            <th>Longitude:</th>
+        </thead>
+        <tbody>
+            <td id="td1"></td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+            <td id="td5"></td>
+            <td id="td6"></td>
+        </tbody>
+      </table>
+      <button id="show__map">Exibir mapa</button>
+      <iframe id="maps" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div id="layer"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

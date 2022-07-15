@@ -12,11 +12,11 @@ let stringCoin;
 
 function saveDateInString() {
   stringDate = inputDate.value.replace(/-/g, "");
-}
+};
 
 function saveCoinSelected() {
   stringCoin = selectCoin.value;
-}
+};
 
 function fetchApi() {
   btn.style.cursor = "wait";
@@ -35,7 +35,6 @@ function fetchApi() {
   )
     .then((response) => response.json())
     .then((data) => saveCurrentDate(data))
-
     .catch((e) => {
       alert(e.message);
       btn.style.cursor = "wait";
@@ -53,6 +52,7 @@ function saveCurrentDate(data) {
   td4.innerHTML = data[0].high;
   td5.innerHTML = data[0].bid;
   btn.style.cursor = "default";
+  console.log(data);
 };
 
 btn.addEventListener("click", fetchApi);
