@@ -7,9 +7,13 @@ let currentDate1 = "";
 let currentDate2 = "";
 let currentDate3= "";
 
-fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome`)
-.then((response) => response.json()
-.then((data) => displayDistricts(data)));
+async function fillSelect(){
+    const response = await fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome`);
+    const data = await response.json();
+    displayDistricts(data);
+};
+
+fillSelect();
 
 function displayDistricts(data){
     selectDistrict.innerHTML = `<option hidden> Selecione uma UF: </option>`;
